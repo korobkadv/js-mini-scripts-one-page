@@ -1,0 +1,103 @@
+.game {
+    width: 800px;
+    height: 150px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+}
+
+.game_over {
+    width: 260px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    left: 40%;
+    color: #b10101;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    z-index: 99;
+    display: none;
+}
+
+.game_over button {
+    text-decoration: none;
+    color: white;
+    padding: 20px 30px;
+    margin: 10px 20px;
+    text-transform: uppercase;
+    background: #a00404;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.game_over button:hover {
+    background: #1ea004; 
+}
+
+.moto {
+    width: 50px;
+    height: 50px;
+    background: url(img/icons8-motosport-100.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 105px;
+    left: 50px;
+}
+
+.building {
+    width: 85px;
+    height: 85px;
+    background: url(img/icons8-dongdaemun-gate-100.png);
+    background-size: 85px 85px;
+    position: relative;
+    top: 28px;
+    left: 700px;
+    animation: buildMov 2s infinite linear;
+    
+}
+
+@keyframes buildMov {
+    0% {
+        left: 700px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.7s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 105px;
+    }
+    20% {
+        top: 50px;
+    }
+    50% {
+        top: 0px;
+    }
+    80% {
+        top: 50px;
+    }
+    100% {
+        top: 105px;
+    }
+}
+
+.show_game_over {
+    display: block;
+    animation-play-state: paused;
+}
+
+.score {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 40px;
+    left: 70%;  
+    font-size: 50px;
+    font-weight: 800;
+    color: #1ea004;
+}
