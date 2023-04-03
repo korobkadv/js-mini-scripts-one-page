@@ -51,8 +51,18 @@
     position: relative;
     top: 28px;
     left: 700px;
+}
+
+.building_speed_1 {
     animation: buildMov 2s infinite linear;
-    
+}
+
+.building_speed_2 {
+    animation: buildMov 1.5s infinite linear;
+}
+
+.building_speed_3 {
+    animation: buildMov 1s infinite linear;
 }
 
 @keyframes buildMov {
