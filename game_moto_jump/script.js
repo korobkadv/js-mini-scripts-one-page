@@ -38,7 +38,7 @@ let score = 0;
 building.addEventListener('animationiteration', () => {
     scoreDiv.innerHTML = score + 1;
     score = score + 1;
-    console.log(score);
+
     if(score > 5 && score <=10) {
         building.classList.remove("building_speed_1");
         building.classList.add("building_speed_2");

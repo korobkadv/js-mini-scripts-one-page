@@ -41,7 +41,7 @@ a:hover {
   background: #fefefe;
   color: #231f20;
   font-family: "Trebuchet MS", "Lucida Sans";
-  width: 550px;
+  width: 650px;
 }
 .bullet li:before {
   position: absolute;
@@ -59,4 +59,5 @@ a:hover {
 
 li img {
     width: 20px;
+    float: right;
 }
